@@ -333,7 +333,7 @@ ul li {
 #education-reason h2:nth-child(2)::after {
     content: '';
     display: block;
-    width: 200px;
+    width: 280px;
     height: 2px;
     background: #666;
     margin: 20px 0;
