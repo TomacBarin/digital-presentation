@@ -1,4 +1,4 @@
-let currentImage = 1; 
+let currentImage = 1;
 const images = document.querySelectorAll('.image-container img');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
@@ -21,7 +21,6 @@ nextButton.addEventListener('click', () => {
 
 updateImage();
 
-// Animation för timeline-items med Intersection Observer
 timelineItems.forEach(item => {
     const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {

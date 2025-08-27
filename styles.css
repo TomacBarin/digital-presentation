@@ -251,7 +251,7 @@ ul li {
     box-sizing: border-box;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
     line-height: 1.6;
     display: flex;
     align-items: center;
@@ -262,6 +262,25 @@ ul li {
 .timeline-item.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.timeline-item:nth-child(1) {
+    transition-delay: 0.2s;
+}
+.timeline-item:nth-child(2) {
+    transition-delay: 0.4s;
+}
+.timeline-item:nth-child(3) {
+    transition-delay: 0.6s;
+}
+.timeline-item:nth-child(4) {
+    transition-delay: 0.8s;
+}
+.timeline-item:nth-child(5) {
+    transition-delay: 1.0s;
+}
+.timeline-item:nth-child(6) {
+    transition-delay: 1.2s;
 }
 
 .timeline-item:nth-child(odd) {
@@ -300,7 +319,7 @@ ul li {
 }
 
 #education-reason .text-container {
-    max-width: 600px; /* Roughly half of content-wrapper's max-width (1200px) */
+    max-width: 600px;
     margin: 0 auto;
     text-align: left;
 }
@@ -317,7 +336,7 @@ ul li {
     width: 200px;
     height: 2px;
     background: #666;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 #education-reason p {
@@ -326,7 +345,20 @@ ul li {
     color: #ccc;
 }
 
-/* Intermediate media query for better transitions */
+
+.linkColor {
+    color: #FC49B5; 
+    text-decoration: none; 
+}
+
+.linkColor:hover {
+    background-color: #FC49B5; 
+    outline-offset: 2px; 
+    color: black; 
+    padding: 2px 4px; 
+    border-radius: 5px;
+}
+
 @media (max-width: 900px) {
     ul {
         font-size: 18px;
@@ -337,11 +369,10 @@ ul li {
         max-width: 45%;
     }
     #education-reason .text-container {
-        max-width: 500px; 
+        max-width: 500px;
     }
 }
 
-/* Media query för smala skärmar */
 @media (max-width: 767px) {
     section {
         min-height: 80vh;
@@ -363,7 +394,7 @@ ul li {
         min-width: auto;
     }
     #education-reason .text-container {
-        max-width: 90%; 
+        max-width: 90%;
     }
 }
 
@@ -383,7 +414,6 @@ ul li {
     }
 }
 
-/* Animationer */
 @keyframes fadeInGlitch {
     0% { opacity: 0; }
     50% { opacity: 0.5; transform: skew(2deg); }
