@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomac Barin Jansson</title>
+    <!--Optimera sökresultaten-->
+    <meta name="description" content="Tomac Barin Jansson's portfolio: 3D art, sound design, animation, and fullstack development. Explore my creative projects!">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="javascript.js" defer></script>
 </head>
 <body>
+    <!--Secetion 1: Introduction-->
     <section id="intro">
         <div class="intro-background"></div>
         <div class="intro-text">
             <h1>Tomac Barin</h1>
         </div>
     </section>
+    <!--Section 2: The "hobby"-section, though it is more a portfolio with reference images-->
     <section id="about-me">
         <div class="content-wrapper">
             <div class="content-container">
                 <div class="image-gallery">
                     <div class="image-container">
-                        <img src="assets/Wilma4_TomacBarin03_sm.jpg" alt="Deskbot Wilma4, view 1">
-                        <img src="assets/Wilma4_TomacBarin02_sm.jpg" alt="Deskbot Wilma4, view 2" class="active">
-                        <img src="assets/Wilma4_TomacBarin01_sm.jpg" alt="Deskbot Wilma4, view 3">
+                        <!--Reference images-->
+                        <img src="assets/Wilma4_TomacBarin03_sm.jpg" alt="Tomac Barin's Deskbot Wilma4 3D design, view 1"> <!--loading="lazy" för bättre prestanda på långsamma nätverk, togs bort pga märkligt beteende-->
+                        <img src="assets/Wilma4_TomacBarin02_sm.jpg" alt="Tomac Barin's Deskbot Wilma4 3D design, view 2" class="active">
+                        <img src="assets/Wilma4_TomacBarin01_sm.jpg" alt="Tomac Barin's Deskbot Wilma4 3D design, view 3">
                     </div>
                     <div class="button-container">
-                        <button class="prev"><</button>
-                        <button class="next">></button>
+                        <button class="prev" aria-label="Previous image"><</button>
+                        <button class="next" aria-label="Next image">></button>
                     </div>
                 </div>
                 <div>
                     <ul>
+                        <!--Portfolio-->
                         <h2 id="portfolioSize">/Portfolio</h2>
                         <li>Deskbot design</li>
                         <li>3D [nurbs & polygons]</li>
@@ -42,11 +48,13 @@
             </div>
         </div>
     </section>
+    <!--Section 3: CV-->
     <section id="cv">
         <div class="content-wrapper">
             <div class="cv-inner">
                 <h2 class="silkscreenSize">The Polymath Project</h2>
                 <div class="cv-content">
+                    <!--Timeline with animation-->
                     <div class="timeline">
                         <div class="timeline-item"><span>2015</span> Sound Design</div>
                         <div class="timeline-item"><span>2017</span> Color Grading</div>
@@ -60,6 +68,7 @@
             </div>
         </div>
     </section>
+    <!--Section 4: Why chas-->
     <section id="education-reason">
         <div class="content-wrapper">
             <div class="text-container">
@@ -68,7 +77,7 @@
                 <p>[ Two threads pull me here. ]</p>
                 <p class="silkSmall">Professional.</p>
                 <p>Despite the fact that there's never been a better time to become a developer —  with the job market literally exploding with opportunities at prestigious tech firms — I'm drawn to the intimate world of small, passionate companies selling niche treasures, like obscure films, indie games, arcade pinball parts - or even unique clothing. These outfits often run lean, with everyone wearing multiple hats, and I thrive in that collaborative chaos. Take <a href="https://www.hepcat.se/" target="_blank" class="linkColor">HepCat</a>, a store specializing in distinctive retro fashion and rare vinyl finds — an inspiring example of the quirky businesses I'd love to support. 
-                    <br> The <strong>Chas Academy Fullstack Developer Program</strong> equips me to become their one-person web powerhouse, crafting responsive sites with JavaScript and React while managing backend systems using Node.js. Inspired by solo developers who've built vibrant e-commerce platforms for niche markets, I'm eager to code solutions that keep these hidden gems thriving online.</p>
+                    <br> The <strong>Chas Academy Fullstack Developer Program</strong> equips me to become their one-person web powerhouse, crafting responsive sites while managing backend systems. Inspired by solo developers who've built vibrant e-commerce platforms for niche markets, I'm eager to code solutions that keep these hidden gems thriving online.</p>
                 <p class="silkSmall">Personal.</p>
                 <p>I am one skill away from creating my first shmup. With a background in 3D art and sound design, programming is the final piece I need to bring my vision to life. The <strong>Chas Academy Fullstack Developer Program</strong> allows me to master JavaScript, which I'll combine with Phaser for my initial prototypes, before advancing to C# and Unity to craft full-blown bullet hell shmups. Drawing inspiration from the dynamic intensity of <em>Crimzon Clover</em> and the creative flair of <em>Angel at Dusk</em>, both created by solo developers, I'm excited to code my own games.</p>
                 <br>

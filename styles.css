@@ -22,9 +22,9 @@ h1, h2 {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 100vh; /*Ser till att sidan ger "full page"-känsla*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Avgör om elementen läggs horisontellt eller vertikalt*/
     justify-content: center;
     align-items: center;
     position: relative;
@@ -33,7 +33,7 @@ section {
 
 #intro {
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh; /*Ser till att sidan ger "full page"-känsla*/
 }
 
 .intro-background {
@@ -43,7 +43,7 @@ section {
     width: 100%;
     height: 100%;
     background: url('assets/splatter1.png'), rgba(25, 25, 25, 0.75);
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
@@ -54,7 +54,7 @@ section {
     z-index: 1;
     text-align: center;
     opacity: 0;
-    animation: fadeInGlitch 1.5s ease-in-out forwards 0.5s, glitch 0.8s infinite;
+    animation: fadeInGlitch 1.5s ease-in-out forwards 0.5s, glitch 0.8s infinite; 
 }
 
 .intro-text h1 {
@@ -250,8 +250,8 @@ ul li {
     width: 45%;
     box-sizing: border-box;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(20px); /*Flyttar items uppåt när de blir active*/
+    transition: opacity 0.8s ease, transform 0.8s ease; /*Flyttar items uppåt när active tillämpas*/
     line-height: 1.6;
     display: flex;
     align-items: center;
@@ -264,8 +264,9 @@ ul li {
     transform: translateY(0);
 }
 
+/*Ger sekventiell animation*/
 .timeline-item:nth-child(1) {
-    transition-delay: 0.2s;
+    transition-delay: 0.2s; /*Ger stegvis uppvisning av timeline-items*/
 }
 .timeline-item:nth-child(2) {
     transition-delay: 0.4s;
@@ -373,6 +374,8 @@ ul li {
     }
 }
 
+/*Denna del gör hemsidan responsiv*/
+/*Justerar fontstorlek, kolumner och padding för mindre skärmar*/
 @media (max-width: 767px) {
     section {
         min-height: 80vh;
@@ -398,6 +401,7 @@ ul li {
     }
 }
 
+/*Justerar för mycket små skärmar på äldre telefoner*/
 @media (max-width: 480px) {
     .timeline-item {
         padding: 0 10px;
@@ -414,17 +418,20 @@ ul li {
     }
 }
 
+/*Fade in glitch till Tomac Barin i Intro*/
 @keyframes fadeInGlitch {
     0% { opacity: 0; }
     50% { opacity: 0.5; transform: skew(2deg); }
     100% { opacity: 1; transform: skew(0); }
 }
 
+/*För cv-sektionens fade in*/
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+/*Får Tomac Barin att vicka*/
 @keyframes glitch {
     2%, 64% {
         transform: translate(2px, 0) skew(0deg);
